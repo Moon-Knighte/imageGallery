@@ -1,0 +1,30 @@
+{
+  "name": "nodeimagegallery",
+  "version": "1.0.0",
+  "description": "This is node or express image gallery with implementing basic CRUD structue.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js node index.js "
+  },
+  "keywords": [
+    "CRUD",
+    "Node",
+    "Express",
+    "JavaScript",
+    "Backend"
+  ],
+  "author": "Anjan Basnet",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "css": "^3.0.0",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "method-override": "^3.0.0",
+    "mongoose": "^8.0.4",
+    "multer": "^1.4.5-lts.1",
+    "tailwind": "^4.0.0"
+  }
+}

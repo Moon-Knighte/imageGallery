@@ -1,0 +1,36 @@
+<!-- imageDetail.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- head content -->
+  </head>
+  <body>
+    <h1>Image Detail</h1>
+    <h2><%= image.title %></h2>
+    <p><%= image.description %></p>
+    <img src="<%= image.imagePath %>" alt="<%= image.title %>" />
+
+    <!-- Update Form -->
+    <form action="/images/<%= image._id %>?_method=PUT" method="POST">
+      <!-- Form fields for updating image -->
+      <label for="title">Title:</label>
+      <input
+        type="text"
+        id="title"
+        name="title"
+        value="<%= image.title %>"
+        required
+      />
+      <label for="description">Description:</label>
+      <textarea id="description" name="description">
+<%= image.description %></textarea
+      >
+      <button type="submit">Update Image</button>
+    </form>
+
+    <!-- Delete Form -->
+    <form action="/images/<%= image._id %>?_method=DELETE" method="POST">
+      <button type="submit">Delete Image</button>
+    </form>
+  </body>
+</html>
